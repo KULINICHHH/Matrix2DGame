@@ -7,6 +7,7 @@ public class OpenDimension : MonoBehaviour
 {
     [SerializeField]
     private GameObject partOfFirstDimension;
+    [SerializeField]
 
     public void OpenorClosePartOfFirstDimension()
     {

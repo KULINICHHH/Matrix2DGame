@@ -29,7 +29,7 @@ public class InteractWithObjects : MonoBehaviour
                 if (interactable != null)
                 {
                     interactable.Interact();
-                    Debug.Log(interactable?.name);
+                    //Debug.Log(interactable?.name);
                 }
             }
         }

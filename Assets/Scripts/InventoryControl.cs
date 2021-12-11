@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class InventoryControl : MonoBehaviour
+public class IntentoryControl : MonoBehaviour
 {
     [SerializeField]
     private Image[] InventoryItems;
@@ -11,9 +11,8 @@ public class InventoryControl : MonoBehaviour
 
     public int AddItemInInventory(Sprite _sprite)
     {
-        InventoryItems[count].sprite = _sprite;
-         return count++;
-
+        InventoryItems[count].sprite = _sprite;        
+        return count++;
     }
     public void RemoveItemInInventory(int id)
     {
