@@ -3,13 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class OpenDimension : MonoBehaviour
+public class SetActiveAndInactive : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject partOfFirstDimension;
-    [SerializeField]
-
-    public void OpenorClosePartOfFirstDimension()
+    public void OpenorClosePartOfFirstDimension(GameObject partOfFirstDimension)
     {
         if(partOfFirstDimension.active == false)
         {
