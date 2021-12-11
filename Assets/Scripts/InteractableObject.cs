@@ -5,6 +5,7 @@ using UnityEngine.Events;
 
 public class InteractableObject : MonoBehaviour
 {
+   
     public UnityEvent theEvent;
     public virtual void Interact()
     {
