@@ -9,6 +9,7 @@ public class InteractableObject : MonoBehaviour
     private InventoryControl inventory;
     public bool IsQuestObj = false;
     public QuestObj questObj;
+    public UnityEvent theEvent;
     private void Start()
     {
         sprite = GetComponent<SpriteRenderer>().sprite;
@@ -16,6 +17,10 @@ public class InteractableObject : MonoBehaviour
     }
     public virtual void Interact()
     {       
+        if(theEvent != null)
+        {
+            theEvent.Invoke();
+        }
         if (IsQuestObj)
         {
             int numberInArray = inventory.AddItemInInventory(sprite);
