@@ -190,9 +190,9 @@ GameObject:
   m_Component:
   - component: {fileID: 127603477}
   - component: {fileID: 127603476}
-  - component: {fileID: 127603475}
   - component: {fileID: 127603474}
   - component: {fileID: 127603478}
+  - component: {fileID: 127603475}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -230,13 +230,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 127603473}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35152cd526e12c845bcdee83f1159ca5, type: 3}
+  m_Script: {fileID: 11500000, guid: 35676cc6091e705409b06275b48045ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpeedHorizontal: 5
-  demention1:
-    serializedVersion: 2
-    m_Bits: 0
+  SpeedHorizontal: 10
 --- !u!212 &127603476
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -276,7 +273,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
