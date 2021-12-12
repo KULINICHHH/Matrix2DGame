@@ -9,7 +9,7 @@ public class InteractWithObjects : MonoBehaviour
     private LayerMask demention2;
 
     [SerializeField]
-    private int radiusOfClick;
+    private float radiusOfClick;
 
     private Camera mainCamera;
     private void Start()
