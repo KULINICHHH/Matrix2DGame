@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class QuestObj : InteractableObject
 {
-    private bool openForInterract = false;
+    public bool openForInterract = false;
     public bool needToAddObj;
     private int numberInArray;
     public override void Interact()
@@ -19,8 +19,13 @@ public class QuestObj : InteractableObject
             Game.instance.inventory.RemoveItemInInventory(numberInArray);
             if (needToAddObj)
             {
-                int numberInArray = inventory.AddItemInInventory(sprite);
-                questObj.canInterract(numberInArray);
+                base.Interact();
+              //  int numberInArray = inventory.AddItemInInventory(sprite);
+              //  questObj.canInterract(numberInArray);
+            }
+            if (Destroy)
+            {
+                Destroy(gameObject);
             }
         }
     }
