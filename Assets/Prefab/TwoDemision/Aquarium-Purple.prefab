@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2115033165005247033}
   - component: {fileID: 2279581441217020458}
-  m_Layer: 0
+  - component: {fileID: 6623845693579641679}
+  m_Layer: 6
   m_Name: Aquarium-Purple
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84,6 +85,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6623845693579641679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2513772966851841879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d09c3c79e1400d543b7e0e56c6d27319, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
+  IsQuestObj: 0
+  questObj: {fileID: 0}
+  theEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &3534355895991275773
 GameObject:
   m_ObjectHideFlags: 0
@@ -96,7 +115,7 @@ GameObject:
   - component: {fileID: 5064427109360557139}
   - component: {fileID: 6536625069356195010}
   - component: {fileID: 4396343148472539387}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Boom1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -210,7 +229,7 @@ GameObject:
   - component: {fileID: 2426526952125335141}
   - component: {fileID: 1000610205942809192}
   - component: {fileID: 917096026617804454}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Octopus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
