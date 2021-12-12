@@ -5,6 +5,7 @@ using UnityEngine.Events;
 
 public class InteractableObject : MonoBehaviour
 {
+    [SerializeField]
     private Sprite sprite;
     private InventoryControl inventory;
     public bool IsQuestObj = false;
@@ -12,7 +13,10 @@ public class InteractableObject : MonoBehaviour
     public UnityEvent theEvent;
     private void Start()
     {
-        sprite = GetComponent<SpriteRenderer>().sprite;
+        if(sprite == null)
+        {
+            sprite = GetComponent<SpriteRenderer>().sprite;
+        }
         inventory = Game.instance.inventory;
     }
     public virtual void Interact()
