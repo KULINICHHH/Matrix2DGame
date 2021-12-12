@@ -9,6 +9,7 @@ public class IntentoryControl : MonoBehaviour
     private Image[] InventoryItems;
     private int count = 0;
 
+    
     public int AddItemInInventory(Sprite _sprite)
     {
         InventoryItems[count].sprite = _sprite;        

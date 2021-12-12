@@ -6,8 +6,8 @@ using UnityEngine.Events;
 public class InteractableObject : MonoBehaviour
 {
     [SerializeField]
-    private Sprite sprite;
-    private InventoryControl inventory;
+    protected Sprite sprite;
+    protected InventoryControl inventory;
     public bool IsQuestObj = false;
     public QuestObj questObj;
     public UnityEvent theEvent;
