@@ -36,11 +36,11 @@ public class PlayerMovement : MonoBehaviour
             _animation.SetBool("IsRun", true);
             if(this.gameObject.transform.position.x < 26.3f && HorizontalMovement > 0)
             {
-                _playerRb.AddForce(_playerTransform.right * SpeedHorizontal * HorizontalMovement);
+                _playerRb.AddRelativeForce(_playerTransform.right * SpeedHorizontal * HorizontalMovement);
             }
             else if(this.gameObject.transform.position.x > -21f && HorizontalMovement < 0)
             {
-                _playerRb.AddForce(_playerTransform.right * SpeedHorizontal * HorizontalMovement);
+                _playerRb.AddRelativeForce(_playerTransform.right * SpeedHorizontal * HorizontalMovement);
             }
         }
         else
