@@ -34,7 +34,14 @@ public class PlayerMovement : MonoBehaviour
                 _spriteRenderer.flipX = false;
             }
             _animation.SetBool("IsRun", true);
-            _playerRb.AddForce(_playerTransform.right * SpeedHorizontal * HorizontalMovement);
+            if(this.gameObject.transform.position.x < 26.3f && HorizontalMovement > 0)
+            {
+                _playerRb.AddForce(_playerTransform.right * SpeedHorizontal * HorizontalMovement);
+            }
+            else if(this.gameObject.transform.position.x > -21f && HorizontalMovement < 0)
+            {
+                _playerRb.AddForce(_playerTransform.right * SpeedHorizontal * HorizontalMovement);
+            }
         }
         else
         {
