@@ -12,10 +12,11 @@ public class QuestObj : InteractableObject
         
         if (openForInterract)
         {
+            
             Debug.Log("Geniiiiiiiiiii");
             if (theEvent != null)
             {
-                theEvent.Invoke();
+                theEvent.Invoke(eventParam);
             }
             Game.instance.inventory.RemoveItemInInventory(numberInArray);
             if (needToAddObj)
@@ -30,13 +31,7 @@ public class QuestObj : InteractableObject
         }
         else
         {
-            switch (questId)
-            {
-                case 1:
-                    var loader = gameObject.GetComponent<CatSceneLoader>();
-                    loader.CheckFishInInventory();
-                    break;
-            }
+            
         }
     }
     public void canInterract(int NumberInArray)

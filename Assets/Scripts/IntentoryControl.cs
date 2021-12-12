@@ -8,6 +8,7 @@ public class InventoryControl : MonoBehaviour
     [SerializeField]
     private Image[] InventoryItems;
     private int count = 0;
+    public bool fish = false;
 
     public int AddItemInInventory(Sprite _sprite)
     {

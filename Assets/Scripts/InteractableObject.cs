@@ -12,8 +12,9 @@ public class InteractableObject : MonoBehaviour
     public bool Destroy = false;
     public QuestObj questObj;
     public int questId = 0;
+    protected int eventParam = 0;
 
-    public UnityEvent theEvent;
+    public UnityEvent<int> theEvent;
 
     private void Start()
     {
@@ -28,7 +29,7 @@ public class InteractableObject : MonoBehaviour
        
         if(theEvent != null)
         {
-            theEvent.Invoke();
+            theEvent.Invoke(eventParam);
         }
         if (IsQuestObj && questObj!=null)
         {

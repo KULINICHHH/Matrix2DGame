@@ -5,6 +5,7 @@ using UnityEngine;
 public class Game : MonoBehaviour
 {
     public InventoryControl inventory;
+    public AudioSource audioSource;
     public static Game instance;
     
     void Awake()
