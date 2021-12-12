@@ -25,10 +25,11 @@ public class InteractableObject : MonoBehaviour
         {
             theEvent.Invoke();
         }
-        if (IsQuestObj)
+        if (IsQuestObj && questObj!=null)
         {
             int numberInArray = inventory.AddItemInInventory(sprite);
             questObj.canInterract(numberInArray);
+            Debug.Log("drggggggggfbhrdb");
             Destroy(gameObject);
         }
     }
