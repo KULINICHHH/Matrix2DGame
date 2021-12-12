@@ -29,10 +29,7 @@ public class QuestObj : InteractableObject
             }
 
         }
-        else
-        {
-            
-        }
+
     }
     public void canInterract(int NumberInArray)
     {

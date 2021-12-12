@@ -27,7 +27,7 @@ public class InteractableObject : MonoBehaviour
     public virtual void Interact()
     {       
        
-        if(theEvent != null)
+       if(theEvent != null)
         {
             theEvent.Invoke(eventParam);
         }

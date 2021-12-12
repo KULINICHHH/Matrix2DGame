@@ -13,7 +13,7 @@ public class PlayAnim : MonoBehaviour
     }
     public void PlayAnimation()
     {
-
-        anim.Play("Key");
+       anim.Play("Key");
     }
+
 }
