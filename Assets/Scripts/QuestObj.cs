@@ -20,8 +20,6 @@ public class QuestObj : InteractableObject
             if (needToAddObj)
             {
                 base.Interact();
-              //  int numberInArray = inventory.AddItemInInventory(sprite);
-              //  questObj.canInterract(numberInArray);
             }
             if (Destroy)
             {
