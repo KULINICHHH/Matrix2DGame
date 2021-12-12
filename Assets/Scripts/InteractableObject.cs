@@ -9,6 +9,7 @@ public class InteractableObject : MonoBehaviour
     protected Sprite sprite;
     protected InventoryControl inventory;
     public bool IsQuestObj = false;
+    public bool Destroy = false;
     public QuestObj questObj;
     public UnityEvent theEvent;
     private void Start()
@@ -29,7 +30,10 @@ public class InteractableObject : MonoBehaviour
         {
             int numberInArray = inventory.AddItemInInventory(sprite);
             questObj.canInterract(numberInArray);
-            Debug.Log("drggggggggfbhrdb");
+            Debug.Log("drggggggggfbhrdb");           
+        }
+        if (Destroy)
+        {
             Destroy(gameObject);
         }
     }
