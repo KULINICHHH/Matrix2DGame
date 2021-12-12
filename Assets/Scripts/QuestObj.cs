@@ -9,6 +9,7 @@ public class QuestObj : InteractableObject
     private int numberInArray;
     public override void Interact()
     {
+        
         if (openForInterract)
         {
             Debug.Log("Geniiiiiiiiiii");
@@ -24,6 +25,17 @@ public class QuestObj : InteractableObject
             if (Destroy)
             {
                 Destroy(gameObject);
+            }
+
+        }
+        else
+        {
+            switch (questId)
+            {
+                case 1:
+                    var loader = gameObject.GetComponent<CatSceneLoader>();
+                    loader.CheckFishInInventory();
+                    break;
             }
         }
     }

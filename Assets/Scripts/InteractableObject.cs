@@ -11,7 +11,10 @@ public class InteractableObject : MonoBehaviour
     public bool IsQuestObj = false;
     public bool Destroy = false;
     public QuestObj questObj;
+    public int questId = 0;
+
     public UnityEvent theEvent;
+
     private void Start()
     {
         if(sprite == null)
@@ -22,6 +25,7 @@ public class InteractableObject : MonoBehaviour
     }
     public virtual void Interact()
     {       
+       
         if(theEvent != null)
         {
             theEvent.Invoke();
@@ -36,5 +40,6 @@ public class InteractableObject : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
     }
 }
