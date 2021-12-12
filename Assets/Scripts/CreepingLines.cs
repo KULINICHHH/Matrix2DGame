@@ -7,9 +7,5 @@ public class CreepingLines : MonoBehaviour
     private int count = 0;
     void FixedUpdate()
     {
-        if(count++ == 2)
-        {
-            Instantiate(Number);
-        }
     }
 }
